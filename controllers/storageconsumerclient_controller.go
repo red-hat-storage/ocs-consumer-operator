@@ -63,6 +63,8 @@ type StorageConsumerClientReconciler struct {
 //+kubebuilder:rbac:groups=odf.openshift.io,resources=storageconsumerclients,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=odf.openshift.io,resources=storageconsumerclients/status,verbs=get;update;patch
 //+kubebuilder:rbac:groups=odf.openshift.io,resources=storageconsumerclients/finalizers,verbs=update
+//+kubebuilder:rbac:groups=odf.openshift.io,resources=storageclassclaims,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=odf.openshift.io,resources=storageclassclaims/status,verbs=get;update;patch
 
 // SetupWithManager sets up the controller with the Manager.
 func (r *StorageConsumerClientReconciler) SetupWithManager(mgr ctrl.Manager) error {

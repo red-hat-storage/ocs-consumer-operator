@@ -16,4 +16,13 @@ resources:
   kind: StorageConsumerClient
   path: github.com/red-hat-storage/ocs-consumer-operator/api/v1alpha1
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: openshift.io
+  group: odf
+  kind: StorageClassClaim
+  path: github.com/red-hat-storage/ocs-consumer-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
