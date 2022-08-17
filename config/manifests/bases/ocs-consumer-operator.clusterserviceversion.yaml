@@ -1,0 +1,43 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: ocs-consumer-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: foo
+  displayName: OpenShift Data Foundation Client
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - operator
+  - data
+  - storage
+  links:
+  - name: Ocs Consumer Operator
+    url: https://ocs-consumer-operator.domain
+  maintainers:
+  - email: ocs-support@redhat.com
+    name: Red Hat
+  maturity: alpha
+  provider:
+    name: Red Hat
+  version: 0.0.0
