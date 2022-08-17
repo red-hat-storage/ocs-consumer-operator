@@ -6,4 +6,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: ocs-consumer-operator
 repo: github.com/red-hat-storage/ocs-consumer-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: openshift.io
+  group: odf
+  kind: StorageConsumerClient
+  path: github.com/red-hat-storage/ocs-consumer-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"

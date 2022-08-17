@@ -6,3 +6,29 @@ metadata:
   creationTimestamp: null
   name: manager-role
 rules:
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients/status
+  verbs:
+  - get
+  - patch
+  - update

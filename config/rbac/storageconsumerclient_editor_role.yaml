@@ -4,3 +4,21 @@ kind: ClusterRole
 metadata:
   name: storageconsumerclient-editor-role
 rules:
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients/status
+  verbs:
+    - get

@@ -4,3 +4,17 @@ kind: ClusterRole
 metadata:
   name: storageconsumerclient-viewer-role
 rules:
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - odf.openshift.io
+  resources:
+  - storageconsumerclients/status
+  verbs:
+  - get
